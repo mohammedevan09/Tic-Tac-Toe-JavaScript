@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: rgb(230, 219, 250);
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  margin: 30px;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  display: inline;
+  border: 2px dotted black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.game {
+  margin: 50px 26vw;
+  background-color: white;
+  text-align: center;
+  padding: 42px;
+  width: 540px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.container .box {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  font-family: "Pacifico", cursive;
+  padding: 90px;
+  position: relative;
+}
+.container .boxtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  font-family: "Pacifico", cursive;
+  padding: 90px;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3) {
+  border-top: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+  border-bottom: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(7) {
+  border-left: none;
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9) {
+  border-right: none;
+}
+
+.gameInfo {
+  margin: 35px;
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+}
+
+.info {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#reset {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background: pink;
+  border: none;
+  border-radius: 9px;
+  width: 30vw;
+  cursor: pointer;
+}
